@@ -31,7 +31,7 @@ function getBorrowersForBook(book, accounts) {
   return book.borrows.map(borrow => {
   let account = accounts.find(acc => acc.id === borrow.id)
   return {...borrow, ...account}  
-});
+})
   .slice(0,10)
 };
 
